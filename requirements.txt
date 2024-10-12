@@ -1,0 +1,7 @@
+requests
+
+# # testing
+# mock
+# httpretty==1.1.4
+# coveralls
+# coverage
