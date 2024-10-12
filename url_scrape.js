@@ -20,7 +20,8 @@ function scrollAndGetUrls() {
       if ((window.innerHeight + window.pageYOffset) >= newHeight) {
         urlsize++;
         if (newHeight === lastHeight) {
-          if (unchanged >= 5 || urlsize >= 100) {
+          unchanged++;
+          if (unchanged >= 10 || urlsize >= 100) {
             clearInterval(scrollInterval);
             console.log("Scrolling complete. Now collecting URLs...");
             
